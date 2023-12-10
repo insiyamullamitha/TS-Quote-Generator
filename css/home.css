@@ -14,7 +14,7 @@ body{
 }
 
 header{
-    background: #bdcfb7;
+    background: #eab4cc;
 }
 
 header::after{
@@ -24,9 +24,9 @@ header::after{
 }
 
 .logo{
-    color: #464d60;
+    color: #6d3d46;
     float: left;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 nav{
@@ -42,7 +42,7 @@ nav ul{
 nav li{
     display: inline-block;
     margin-left: 70px;
-    padding-top: 55px;
+    padding-top: 50px;
     position: relative;
 }
 
@@ -70,11 +70,60 @@ nav a::before {
 }
 
 nav a:hover {
-    color: #464d60; /* Change this color to your desired hover color */
+    color: #000003; /* Change this color to your desired hover color */
 }
 
 nav a:hover::before {
     visibility: visible;
     transform-origin: bottom left;
     transform: scaleX(1);
+}
+
+.curved-box{
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    text-align: center;
+    color: #000003;
+    font-size: 10px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.home-image{
+    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome{
+    padding: 20px;
+    background: #bdcfb7;
+    float: right;
+    margin-top: 70px;
+    margin-right: 52px;
+    font: 20px 'Roboto', sans-serif;
+}
+
+.about{
+    margin-top: -15px;
+    margin-left: 40px;
+    float: center;
+    background: #bea7c4;
+    width: 90%;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    float: bottom;
+    background-color: #bdcfb7;
+    text-align: center;
+    color: #464d60;
+    font-size: 10px;
+    font-family: 'Work Sans', sans-serif;
 }
