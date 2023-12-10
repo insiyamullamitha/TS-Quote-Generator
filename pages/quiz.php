@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
     <meta charset="UTF-8">
     <title>Taylor Swift Quote Generator</title>
 </head>
@@ -14,24 +14,17 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="quotes.php">Quotes</a></li>
+                <li><a href="quiz.php">Quiz</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
     </header>
-    <div>
-        <img class="home-image" src="images/eras.png" alt="Taylor Swift" class="center" width="70%">
-    </div>
-    <div class="curved-box about">
-        <p> The purpose of this website is to provide a fun and interactive way for fans to generate a random Taylor Swift quote based on their favourite album and mood. </p>
-        <p> The quotes can be viewed by clicking on the "Quotes" tab. </p>
-        <p> If you would like to contact me, please click on the "Contact" tab. </p>
-    </div>
     <footer>
         <div class="center">
             <p> &copy; 2023 Taylor Swift Quote Generator </p>
             <p> Created by Insiya Mullamitha</p>
         </div>
-
     </footer>
+</body>
 </html>
