@@ -1,3 +1,4 @@
+<?php include('taylor_api.php')?>
 <html>
 <head>
     <title>Home</title>
@@ -19,64 +20,40 @@
             </ul>
         </nav>
     </header>
-    </div>
-    <div class="album">
-    <label name="album">Choose a Taylor Swift Album</label>
-        <select id="album">
-            <option value="Taylor Swift">Taylor Swift</option>
-            <option value="Fearless">Fearless</option>
-            <option value="Speak Now">Speak Now</option>
-            <option value="Red">Red</option>
-            <option value="1989">1989</option>
-            <option value="Reputation">Reputation</option>
-            <option value="Lover">Lover</option>
-            <option value="Folklore">Folklore</option>
-            <option value="Evermore">Evermore</option>
-            <option value="Midnights">Midnights</option>
-            <option value="Random">Random</option>
+    <label> Select an album: </label>
+    <form action="quotes.php" method="post">
+        <select name="album">
+            <option value="2">Taylor Swift</option>
+            <option value="3">Fearless (Taylor's Version)</option>
+            <option value="4">Speak Now (Taylor's Version)</option>
+            <option value="5">Red (Taylor's Version)</option>
+            <option value="1">1989 (Taylor's Version)</option>
+            <option value="6">reputation</option>
+            <option value="7">Lover</option>
+            <option value="8">folklore</option>
+            <option value="9">evermore</option>
+            <option value="10">Midnights</option>
+            <option value="0">Random</option>
         </select>
-    </div>
+        <input type="submit" value="Submit">
+    </form>
+    <?php
+        #var_dump($_POST);
+        if (isset($_POST['album'])) {
+            $album_id = $_POST['album'];
+        }
+        else {
+            $album_id = rand(1, 10);
+        }
+        $response = get_random_quote($album_id);
+        echo $response;
+
+    ?>
     <footer>
         <div class="center">
             <p> &copy; 2023 Taylor Swift Quote Generator </p>
             <p> Created by Insiya Mullamitha</p>
         </div>
     </footer>
-<?php
-
-$curl = curl_init();
-
-$song = "https://taylor-swift-api.sarbo.workers.dev/songs";
-
-curl_setopt($curl, CURLOPT_URL, $song);
-curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "GET");
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-
-$response = curl_exec($curl);
-$error = curl_errno($curl);
-
-curl_close($curl);
-
-if ($error) {
-    die("cURL Error: " . $error);
-}
-
-$response = json_decode($response, true);
-
-$random = rand(0, count($response) - 1);
-$id = $response[$random]['song_id'];
-$title = $response[$random]['title'];
-$album_id = $response[$random]['album_id'];
-echo "ID: $id Title: $title Album: $album_id <br>";
-
-foreach ($response as $song) {
-    $song_id = $song['song_id'];
-    $title = $song['title'];
-    $album_id = $song['album_id'];
-    echo "ID: $song_id Title: $title Album: $album_id<br>";
-}
-
-
-?>
 </body>
 </html>
