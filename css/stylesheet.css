@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 @import url(https://db.onlinewebfonts.com/c/f31990850acb50ca85c8e2fd39425647?family=taylor+swift);
 
+@font-face {
+    font-family: "taylor-handwriting";
+    src: url("fonts/taylor-handwriting.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "folklore";
+    src: url("fonts/folklore.ttf") format("truetype");
+}
+
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background: #464d60;;
@@ -25,7 +35,7 @@ body{
 
 header{
     background: #eab4cc;
-    font-family: 'taylor swift', sans-serif;
+    font-family: 'taylor-handwriting', 'Work Sans', sans-serif;
 }
 
 header::after{
@@ -37,7 +47,7 @@ header::after{
 .logo{
     color: #6d3d46;
     float: left;
-    padding: 0.5% 0;
+    padding: 0.3% 0;
     cursor: pointer;
 }
 
@@ -54,15 +64,16 @@ nav ul{
 nav li{
     display: inline-block;
     margin-left: 70px;
-    padding-top: 3em;
+    padding-top: 2.4em;
     position: relative;
 }
 
 nav a {
     color: #464d60;
-    font: 17px 'Roboto', sans-serif;
+    font: 17px 'Work Sans', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
 
     position: relative;
 }
@@ -111,7 +122,7 @@ nav a:hover::before {
     font-size: 0.8em;
     text-align: center;
     color: #000003;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'Roboto', sans-serif;
 }
 
 footer{
@@ -122,11 +133,69 @@ footer{
     text-align: center;
     color: #464d60;
     font-size: 10px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'Roboto', sans-serif;
     margin-top: auto;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;            /* Footer height */
     padding: 0.5rem 0;        /* Footer padding */
+}
+
+.form{
+    border-radius: 30px;
+    margin-top: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: center;
+    display: block;
+    background: #c2e2f4;
+    width: 90%;
+    height: 50px;
+    font-size: 0.9em;
+    text-align: center;
+    color: #000003;
+    font-family: 'Work Sans', 'Roboto', sans-serif;
+}
+
+
+.quote{
+    border-radius: 30px;
+    margin-top: 0.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 7%;
+    float: center;
+    display: block;
+    width: 90%;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'folklore', 'Work Sans', 'Roboto', sans-serif;
+}
+
+.center{
+    position: relative;
+}
+
+.submit{
+    width: 10%;
+    float: center;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 0.1%;
+    font-family:  'Work Sans', sans-serif;
+    font-size: 0.9em;
+    position: relative;
+    margin-top: 2.5em;
+    height: 30px;
+    border-radius: 30px;
+    background: #cc9d83;
+    color: #000003;
+}
+
+.submit:hover{
+    background: #d1cec7;
+    color: #000003;
 }

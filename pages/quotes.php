@@ -20,35 +20,20 @@
             </ul>
         </nav>
     </header>
-    <label> Select an album: </label>
-    <form action="quotes.php" method="post">
-        <select name="album">
-            <option value="2">Taylor Swift</option>
-            <option value="3">Fearless (Taylor's Version)</option>
-            <option value="4">Speak Now (Taylor's Version)</option>
-            <option value="5">Red (Taylor's Version)</option>
-            <option value="1">1989 (Taylor's Version)</option>
-            <option value="6">reputation</option>
-            <option value="7">Lover</option>
-            <option value="8">folklore</option>
-            <option value="9">evermore</option>
-            <option value="10">Midnights</option>
-            <option value="0">Random</option>
-        </select>
-        <input type="submit" value="Submit">
+    <form method='post' action="#">
+        <input type='submit' name='submit' value='Generate' onclick='submit' class='submit'>
     </form>
-    <?php
-        #var_dump($_POST);
-        if (isset($_POST['album'])) {
-            $album_id = $_POST['album'];
-        }
-        else {
-            $album_id = rand(1, 10);
-        }
-        $response = get_random_quote($album_id);
-        echo $response;
-
-    ?>
+    <div class="center">
+        <div class="quote">
+            <?php
+                $quote_image = get_random_quote("0");
+                $quote = $quote_image[0];
+                $image = $quote_image[1];
+                echo "<p class=quote>$quote</p>";
+                echo "<img src='../images/$image.jpg' alt='$image' id='album'>";
+            ?>
+        </div>
+    </div>
     <footer>
         <div class="center">
             <p> &copy; 2023 Taylor Swift Quote Generator </p>
