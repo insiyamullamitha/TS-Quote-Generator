@@ -2,15 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-    <meta charset="UTF-8">
-    <title>Taylor Swift Quote Generator</title>
+    <?php include __DIR__ . '/../components/header.php'; ?>
     <script type="text/javascript" src="../js/emoji.js"></script>
 </head>
 
 <body>
-    <?php include('header.php');?>
+    <?php include __DIR__ . '/../components/navbar.php'; ?>
     <form method='post' action="#">
         <input type='submit' name='submit' value='Generate' onclick='submit' class='submit'>
     </form>
@@ -27,10 +24,10 @@
                     echo "<input type='button' name='submit' id'emoji' value='Show/Hide Emoji Conversion' class='submit' onclick='revealEmojis();'>";
                 echo "</form>";
                 echo "<p class=song>$song</p>";
-                echo "<p id='emoji'>hello</p>";
+                echo "<p style='display:none;' id='emoji'>hello</p>";
             ?>
         </div>
     </div>
-    <?php include('footer.php'); ?>
+    <?php include __DIR__ . '/../components/footer.php'; ?>
 </body>
 </html>

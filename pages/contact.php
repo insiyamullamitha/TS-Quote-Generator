@@ -1,13 +1,10 @@
 <html>
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-    <meta charset="UTF-8">
-    <title>Taylor Swift Quote Generator</title>
+<?php include __DIR__ . '/../components/header.php'; ?>
 </head>
 
 <body>
-<?php include('header.php'); ?>
+<?php include __DIR__ . '/../components/navbar.php'; ?>
     <!--Section: Contact v.2-->
 <section class="mb-4">
 
@@ -101,6 +98,6 @@
     </div>
 
 </section>
-<?php include('footer.php'); ?>
+<?php include __DIR__ . '/../components/footer.php'; ?>
 </body>
 </html>
