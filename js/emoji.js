@@ -7,3 +7,7 @@ function revealEmojis(){
         emoji.style.display = "none";
     }
 }
+
+function generateEmojis(){
+    
+}

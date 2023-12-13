@@ -25,7 +25,7 @@ function get_random_song($album_id){
     return [$song_id, $title, $album_id];
 }
 
-function get_random_quote($album_id){
+function get_random_quote(){
     $album_id_name = array(
         "1" => "1989",
         "2" => "taylorswift",
@@ -37,9 +37,7 @@ function get_random_quote($album_id){
         "8" => "folklore",
         "9" => "evermore",
         "10" => "midnights");
-    if ($album_id == "0") {
-        $album_id = strval(rand(1, 10));
-    }
+    $album_id = strval(rand(1, 10));
     $album_id = $album_id_name[$album_id];
     $curl = curl_init();
     $lyric = "https://taylorswiftapi.onrender.com/get-all?album=$album_id";

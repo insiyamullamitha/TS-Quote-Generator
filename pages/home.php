@@ -8,18 +8,7 @@
 </head>
 
 <body>
-    <header>
-    <div class="container">
-        <h1 class="logo"> Taylor Swift Quote Generator </h1>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="quotes.php">Quotes</a></li>
-                <li><a href="quiz.php">Quiz</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include('header.php'); ?>
     <div>
         <img class="home-image" src="../images/eras.png" alt="Taylor Swift" class="center" width="80%">
     </div>
@@ -28,12 +17,7 @@
         <p> You can also play a 'guess the lyric' quiz game! </p>
         <p> If you would like to contact me, please click on the "Contact" tab. </p>
     </div>
-    <footer>
-        <div class="center">
-            <p> &copy; 2023 Taylor Swift Quote Generator </p>
-            <p> Created by Insiya Mullamitha</p>
-        </div>
-    </footer>
+    <?php include('footer.php'); ?>
     </div>
 </body>
 </html>
