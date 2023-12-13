@@ -2,8 +2,8 @@
     <head>
         <?php include __DIR__ . '/../components/header.php'; ?>
     </head>
-    <body>
+    <body class='body-for-sticky'>
         <?php include __DIR__ . '/../components/navbar.php'; ?>
-        <?php include __DIR__ . '/../components/footer.php'; ?>
     </body>
+    <?php include __DIR__ . '/../components/footer.php'; ?>
 </html>

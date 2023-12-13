@@ -3,7 +3,7 @@
 <?php include __DIR__ . '/../components/header.php'; ?>
 </head>
 
-<body>
+<body class='body-for-sticky'>
     <?php include __DIR__ . '/../components/navbar.php'; ?>
     <div>
         <img class="home-image" src="../images/eras.png" alt="Taylor Swift" class="center" width="80%">
@@ -13,7 +13,7 @@
         <p> You can also play a 'guess the lyric' quiz game! </p>
         <p> If you would like to contact me, please click on the "Contact" tab. </p>
     </div>
-    <?php include __DIR__ . '/../components/footer.php'; ?>
     </div>
+    <?php include __DIR__ . '/../components/footer.php'; ?>
 </body>
 </html>

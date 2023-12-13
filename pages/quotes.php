@@ -6,12 +6,12 @@
         <script type="text/javascript" src="../js/script.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
-    <body>
+    <body class='body-for-sticky'>
         <?php include __DIR__ . '/../components/navbar.php'; ?>
         <form method='post' action="#">
             <div class="buttonContainer">
                 <input type='submit' name='submit' value='Generate' onclick='submit' class='submit'>
-                <button type='button' class=copyButton onclick='copyText()'><i class='fas fa-copy'></i> Copy to Clipboard</button>
+                <button type='button' class=copyButton onclick='copyText()'><i class='fas fa-copy'></i> Copy To Clipboard</button>
             </div>
         </form>
         <div class="center">
@@ -31,6 +31,6 @@
                 ?>
             </div>
         </div>
-        <?php include __DIR__ . '/../components/footer.php'; ?>
     </body>
+    <?php include __DIR__ . '/../components/footer.php'; ?>
 </html>
