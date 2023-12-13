@@ -1,4 +1,4 @@
-<?php include('taylor_api.php')?>
+<?php include __DIR__ . '/../api/taylor_api.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php include('header.php'); ?>
+    <?php include('header.php');?>
     <form method='post' action="#">
         <input type='submit' name='submit' value='Generate' onclick='submit' class='submit'>
     </form>
@@ -27,7 +27,7 @@
                     echo "<input type='button' name='submit' id'emoji' value='Show/Hide Emoji Conversion' class='submit' onclick='revealEmojis();'>";
                 echo "</form>";
                 echo "<p class=song>$song</p>";
-                echo "<p id=emoji style='display:none;'>hello</p>";
+                echo "<p id='emoji'>hello</p>";
             ?>
         </div>
     </div>
