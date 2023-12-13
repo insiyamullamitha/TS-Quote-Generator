@@ -60,7 +60,11 @@ function get_random_quote($album_id){
     }
     $quote = $response[$random]['quote'];
     $image = $album_id;
-    return [$quote, $image];
+    $song = $response[$random]['song'];
+    if ($image == "folklore" || $image == "evermore") {
+        $song = strtolower($song);
+    }
+    return [$quote, $image, $song];
 }
 
 ?>

@@ -199,3 +199,14 @@ footer{
     background: #d1cec7;
     color: #000003;
 }
+
+#album{
+    float: left;
+    margin-left: 25%;
+}
+
+.song{
+    float: right;
+    margin-right: 35%;
+    font-family: "folklore", "Work Sans", sans-serif;
+}
