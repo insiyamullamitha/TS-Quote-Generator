@@ -10,3 +10,8 @@ function revealEmojis(){
 function generateEmojis(){
 
 }
+
+function copyText() {
+    quote = document.getElementById("quote")
+    navigator.clipboard.writeText(quote.innerHTML)
+}
