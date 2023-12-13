@@ -181,24 +181,28 @@ footer{
 }
 
 .copyButton{
-    border-radius: 30px;
-    margin-top: 1em;
-    margin-left: 42.5%;
-    margin-right: 42.5%;
-    float: center;
-    display: block;
-    background: #bea7c4;
     width: 15%;
-    height: 3em;
-    font-size: 0.5em;
-    text-align: center;
+    float: center;
+    margin-bottom: 0.1%;
+    font-family:  'Work Sans', sans-serif;
+    font-size: 0.9em;
+    position: relative;
+    margin-top: 2.5em;
+    margin-left: 10px;
+    height: 30px;
+    border-radius: 30px;
+    background: #bea7c4;
     color: #000003;
-    font-family: 'Work Sans', 'Roboto', sans-serif;
 }
 
 .copyButton:hover{
     background: #eab4cc;
     color: #000003;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
 }
 
 .center{
@@ -208,8 +212,7 @@ footer{
 .submit{
     width: 10%;
     float: center;
-    margin-left: 45%;
-    margin-right: 45%;
+    margin-right: 10px;
     margin-bottom: 0.1%;
     font-family:  'Work Sans', sans-serif;
     font-size: 0.9em;

@@ -9,7 +9,10 @@
     <body>
         <?php include __DIR__ . '/../components/navbar.php'; ?>
         <form method='post' action="#">
-            <input type='submit' name='submit' value='Generate' onclick='submit' class='submit'>
+            <div class="buttonContainer">
+                <input type='submit' name='submit' value='Generate' onclick='submit' class='submit'>
+                <button type='button' class=copyButton onclick='copyText()'><i class='fas fa-copy'></i> Copy to Clipboard</button>
+            </div>
         </form>
         <div class="center">
             <div class="quote">
@@ -19,7 +22,6 @@
                     $image = $quote_image[1];
                     $song = $quote_image[2];
                     echo "<p class=quote id=quote>$quote</p>";
-                    echo "<button class=copyButton onclick='copyText()'><i class='fas fa-copy'></i> Copy to Clipboard</button></p>";
                     echo "<img src='../images/$image.jpg' alt='$image' id=album>";
                     echo "<form method='post' action='#'>";
                     echo "<input type='button' name='submit' id'emoji' value='Show/Hide Emoji Conversion' class='submit' onclick='revealEmojis();'>";
