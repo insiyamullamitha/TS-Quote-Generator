@@ -5,7 +5,7 @@
             <ul>
                 <li><a href="../pages/home.php">Home</a></li>
                 <li><a href="../pages/quotes.php">Quotes</a></li>
-                <li><a href="../pages/quiz.php">Quiz</a></li>
+                <li><a href="../pages/emojis.php">Emojis</a></li>
                 <li><a href="../pages/contact.php">Contact</a></li>
             </ul>
         </nav>

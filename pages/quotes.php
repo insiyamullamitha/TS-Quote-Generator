@@ -24,9 +24,11 @@
                     echo "<p class=quote id=quote>$quote</p>";
                     echo "<img src='../images/$image.jpg' alt='$image' id=album>";
                     echo "<form method='post' action='#'>";
-                    echo "<input type='button' name='submit' id'emoji' value='Reveal/Hide Song' class='submit' onclick='revealSong();'>";
+                    echo "<div class='songButtonContainer'>";
+                    echo "<input type='button' name='submit' value='Reveal/Hide Song' class='submit reveal' onclick='revealSong();'>";
                     echo "</form>";
-                    echo "<p id=song style='display:none;' class=song>$song</p>";
+                    echo "<p id=song style='display:none;' id='song'class=song>$song</p>";
+                    echo "</div>";
                 ?>
             </div>
         </div>
