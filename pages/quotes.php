@@ -24,10 +24,9 @@
                     echo "<p class=quote id=quote>$quote</p>";
                     echo "<img src='../images/$image.jpg' alt='$image' id=album>";
                     echo "<form method='post' action='#'>";
-                    echo "<input type='button' name='submit' id'emoji' value='Show/Hide Emoji Conversion' class='submit' onclick='revealEmojis();'>";
+                    echo "<input type='button' name='submit' id'emoji' value='Reveal/Hide Song' class='submit' onclick='revealSong();'>";
                     echo "</form>";
-                    echo "<p class=song>$song</p>";
-                    echo "<p style='display:none;' id='emoji'>hello</p>";
+                    echo "<p id=song style='display:none;' class=song>$song</p>";
                 ?>
             </div>
         </div>

@@ -1,9 +1,9 @@
-function revealEmojis(){
-    var emoji = document.getElementById("emoji");
-    if (emoji.style.display === "none") {
-        emoji.style.display = "block";
+function revealSong(){
+    var emoji = document.getElementById("song");
+    if (song.style.display === "none") {
+        song.style.display = "block";
     } else {
-        emoji.style.display = "none";
+        song.style.display = "none";
     }
 }
 
