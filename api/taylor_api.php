@@ -57,6 +57,12 @@ function get_random_quote(){
         $random = rand(0, count($response) - 1);
     }
     $quote = $response[$random]['quote'];
+    foreach (str_split($quote) as $char) {
+        if ($char == "/") {
+            $quote = str_replace("/", "\n", $quote);
+            echo "<script> alert($quote) </script>";
+        }
+    }
     $image = $album_id;
     $song = $response[$random]['song'];
     if ($image == "folklore" || $image == "evermore") {

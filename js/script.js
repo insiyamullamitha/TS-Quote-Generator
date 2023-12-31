@@ -1,14 +1,10 @@
 function revealSong(){
-    var emoji = document.getElementById("song");
+    var song = document.getElementById("song");
     if (song.style.display === "none") {
         song.style.display = "block";
     } else {
         song.style.display = "none";
     }
-}
-
-function generateEmojis(){
-
 }
 
 function copyText() {
